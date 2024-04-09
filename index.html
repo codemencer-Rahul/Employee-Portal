@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Company HR Portal</title>
+    <link rel="icon" href="/images/bulb.jpg">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin:0%;
+            padding:0%;
+            background-color: #ceeff2;
+        }
+        h1{
+            color: whitesmoke;
+        }
+        header,footer{
+            background-color: #304d50;
+            padding: 5px;
+            text-align: center;
+        }
+        .navitem{
+            display: inline;
+            padding: 15px;
+        }
+        .navitem a{
+            text-decoration: none;
+            color: rgb(158, 163, 150);
+        }
+        .registration{
+            width: max-content;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        .directory{
+            text-align: center;
+        }
+        table{
+            margin-left: auto;
+            margin-right: auto;
+            width:100%;
+        }
+        table,tr,th,td{
+            border: 1px solid #6c9194;
+            border-collapse: collapse;
+            padding:8px;
+        }
+        .contact_us{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;">Welcome to Company HR Portal</h1>
+        <nav>
+        <ul type=square>
+            <li class="navitem"><a href="#employee-registration">Employee Registration</a></li>
+            <li class="navitem"><a href="#employee-directory">Employee Directory</a></li>
+            <li class="navitem"><a href="#contact-us">Contact Us</a></li>
+        </ul>
+        </nav>
+    </header>
+    <img src="ep.jpg" style="background-size: cover; width: 100%;">
+    <section id="employee-registration" class="registration">
+        <h2>Employee Registration</h2>
+        <p>Fill the below form to register as <em>employee</em>.</p>
+        <form>
+            <lable for="name">Name:</lable>
+            <input type="text" id="name"><br><br>
+            <lable for="email">Email id:</lable>
+            <input type="email" id="email"><br><br>
+            <lable for="password">Password:</lable>
+            <input type="password" id="password"><br><br>
+            <lable for="age">Age:</lable>
+            <input type="number" id="age"><br><br>
+            <lable for="gender">Gender:</lable>
+            <input type="radio" id="male" value="male" name="gender">
+            <lable for="male">Male</lable>
+            <input type="radio" id="female" value="female" name="gender">
+            <lable for="female">Female</lable><br><br>
+            <lable for="role">Select Role:</lable>
+            <select id="role">
+                <option value="Software Engineer">Software Engineer</option>
+                <option value="Product Manager">Product Manager</option>
+                <option value="Designer">Designer</option>
+                <option value="HR Representetive">HR Representetive</option>
+            </select><br><br>
+            <lable for="joining date">Joining Date:</lable>
+            <input type="date" id="joining date"><br><br>
+            <input type="checkbox" id="terms" value="agree">
+            <lable for="terms">I agree to the terms and conditions</lable><br><br>
+            <input type="submit"><br><br>
+            <input type="reset"><br><br>
+        </form>
+    </section>
+
+    <section id="employee-directory" class="directory">
+        <h2>Employee Directory</h2>
+        <p>List of all registered employees.</p>
+        <table>
+            <tr>
+                <th>Employee ID</th>
+                <th>Employee Name</th>
+                <th>Employee Role</th>
+            </tr>
+            <tr>
+                <td>245</td>
+                <td>Jai Sharma</td>
+                <td>Software Engineer</td>
+            </tr>
+             <tr>
+                <td>289</td>
+                <td>Roni Gupta</td>
+                <td>Product Manager</td>
+            </tr>
+            <tr>
+                <td>276</td>
+                <td>Naina Aggarwal</td>
+                <td>Designer</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="contact-us" class="contact_us">
+        <h2>Contact Us</h2>
+        <p>You can contact us at company@official.com or visit us between 9AM-6PM</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117889.70540428768!2d88.37529576051153!3d22.577109988196774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a020ad3aac00001%3A0xcdf37224c5d6d7e7!2sTata%20Consultancy%20Services!5e0!3m2!1sen!2sin!4v1710263936603!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer>
+        <p>&copy;2024 ABC Enterprise</p>
+    </footer>
+</body>
+</html>
